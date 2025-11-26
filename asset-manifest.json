@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/quiz/static/css/main.a1526dd8.css",
+    "main.js": "/quiz/static/js/main.2ac4fdcf.js",
+    "static/media/health-quiz.png": "/quiz/static/media/health-quiz.5ae9f79bc44de7aca443.png",
+    "index.html": "/quiz/index.html",
+    "main.a1526dd8.css.map": "/quiz/static/css/main.a1526dd8.css.map",
+    "main.2ac4fdcf.js.map": "/quiz/static/js/main.2ac4fdcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1526dd8.css",
+    "static/js/main.2ac4fdcf.js"
+  ]
+}
