@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/quiz/static/css/main.24e83e1e.css",
+    "main.css": "/quiz/static/css/main.378ba5aa.css",
     "main.js": "/quiz/static/js/main.2ac4fdcf.js",
     "static/media/health-quiz.png": "/quiz/static/media/health-quiz.5ae9f79bc44de7aca443.png",
     "index.html": "/quiz/index.html",
-    "main.24e83e1e.css.map": "/quiz/static/css/main.24e83e1e.css.map",
+    "main.378ba5aa.css.map": "/quiz/static/css/main.378ba5aa.css.map",
     "main.2ac4fdcf.js.map": "/quiz/static/js/main.2ac4fdcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.24e83e1e.css",
+    "static/css/main.378ba5aa.css",
     "static/js/main.2ac4fdcf.js"
   ]
 }
