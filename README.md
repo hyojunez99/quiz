@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 한 줄 요약
+React를 활용해 카테고리 선택부터 문제 풀이, 점수 계산, 결과 화면까지의 흐름을 구성한 퀴즈 웹 애플리케이션입니다.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 진행 기간
+- 개인 프로젝트  
+- 2025.11.24 ~ 2025.11.27 (3일)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 주요 기능 & 구현 포인트
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 카테고리 선택 기능
+- 사용자가 선택한 카테고리에 따라 퀴즈 문제가 분기되도록 구현
 
-### `npm test`
+### JSON 데이터 기반 퀴즈 구성
+- JSON 파일에 정의된 문제 데이터를 불러와 카테고리별로 필터링하여 사용
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 퀴즈 진행 및 점수 계산
+- 문제 정답 여부에 따라 점수를 누적하고, React 상태로 관리해 실시간 반영
 
-### `npm run build`
+### 결과 화면 및 재시작 기능
+- 퀴즈 종료 후 점수 결과를 표시하고, 다시 시작할 수 있는 사용자 흐름 구성
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 카테고리별 UI 컬러 적용
+- 선택한 카테고리에 따라 테마 컬러가 변경되도록 구현해 시각적 구분 제공
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 기술 스택
 
-### `npm run eject`
+### Frontend
+- React 19
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Data
+- JSON
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Styling
+- CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Tooling / Deploy
+- Create React App (CRA)
+- GitHub Pages (gh-pages)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Trouble Shooting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**문제:**  
+카테고리 변경 시 UI 컬러가 즉시 반영되지 않는 문제가 발생함
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**해결:**  
+카테고리 값을 기준으로 컬러를 매핑하고, 해당 값을 props로 전달해 컴포넌트 렌더링 시 함께 변경되도록 수정함
